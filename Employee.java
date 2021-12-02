@@ -21,5 +21,10 @@ public class Employee {
     public void processTransaction(Customer cust, Vehicle vehicle) {
         System.out.println("The Customer bought the car " + vehicle + " for " + vehicle.getPrice());
     }
+
+    public void purchaseCar(Vehicle vehicle, Customer cust, boolean finance) {
+        handleCustomer(cust, finance, vehicle);
+    }
+
 }
 
