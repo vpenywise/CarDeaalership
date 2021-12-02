@@ -15,6 +15,6 @@ public class Dealership {
             finance = false;
         }
 
-        cust.purchaseCar(vehicle, emp, finance);
+        emp.purchaseCar(vehicle, cust, finance);
     }
 }
