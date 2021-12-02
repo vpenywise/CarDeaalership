@@ -9,11 +9,7 @@ public class Dealership {
         Employee emp = new Employee();
 
         boolean finance;
-        if(cust.getBudget() < vehicle.getPrice()) {
-            finance = true;
-        } else {
-            finance = false;
-        }
+        finance = cust.getBudget() < vehicle.getPrice();
 
         emp.purchaseCar(vehicle, cust, finance);
     }
