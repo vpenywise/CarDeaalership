@@ -12,6 +12,10 @@ public class Vehicle {
         this.price = price;
     }
 
+    public Vehicle() {
+
+    }
+
     public String toString(){
         return make + " " + model;
     }
