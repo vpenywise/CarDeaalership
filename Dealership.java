@@ -8,6 +8,13 @@ public class Dealership {
         Vehicle vehicle = new Vehicle("Toyota", "Camry", 60000);
         Employee emp = new Employee();
 
-        cust.purchaseCar(vehicle, emp, false);
+        boolean finance;
+        if(cust.getBudget() < vehicle.getPrice()) {
+            finance = true;
+        } else {
+            finance = false;
+        }
+
+        cust.purchaseCar(vehicle, emp, finance);
     }
 }
