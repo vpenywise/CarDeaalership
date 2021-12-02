@@ -3,7 +3,7 @@ package selling_cars;
 public class Employee {
 
     public void handleCustomer(Customer cust, boolean finance, Vehicle vehicle) {
-        if(finance == true) {
+        if(finance) {
             double moneyNeeded = vehicle.getPrice() - cust.getBudget();
             runCreditCheck(cust, moneyNeeded);
         } else if (vehicle.getPrice() <= cust.getBudget()) {
